@@ -1,15 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript Lab</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>User Data Form</title>
+    <style type="text/css" media="all">
+      input[type="text"] {
+        margin: 1em 5em;
+      }
+    </style>
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <h1>User Data Form</h1>
+    <form action="http://localhost:3000/users" method="POST">
+      <label> User Name: <input type="text" name="user" id="userName" /></label><br />
+      <label> User Email: <input type="text" name="email" id="userEmail" /></label><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+
+    
+
   </body>
 
 </html>
